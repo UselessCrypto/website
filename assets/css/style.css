@@ -1169,14 +1169,15 @@ section {
 #listingsAndMentions {
   border-bottom: 1px solid #eeeeee;
   display: flex;
-  justify-content: flex-start;
   padding-bottom: 15px;
 }
 .listings {
+  border-right: 2px solid #eeeeee;
   width: 50%;
 }
 .mentions {
   width: 50%;
+  padding-left: 35px;
 }
 .heading {
   text-align: center;
@@ -1190,8 +1191,10 @@ section {
   width: 60px;
   padding: 0 10px 0 10px;
 }
+.nomics {
+  border-radius: 35%;
+}
 .listing-details {
-  border-right: 2px solid #eeeeee;
   display: flex;
   height: auto;
   justify-content: space-around;
