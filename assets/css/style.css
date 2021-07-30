@@ -1164,6 +1164,63 @@ section {
 }
 
 /*--------------------------------------------------------------
+# START - Listings and Mentions
+--------------------------------------------------------------*/
+#listingsAndMentions {
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  padding-bottom: 15px;
+}
+.listings {
+  border-right: 2px solid #eeeeee;
+  width: 50%;
+}
+.mentions {
+  width: 50%;
+  padding-left: 35px;
+}
+.heading {
+  text-align: center;
+  padding: 0 25px 10px 0;
+}
+.listing-icon {
+  margin: 5px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  padding: 0 10px 0 10px;
+}
+.nomics {
+  border-radius: 35%;
+}
+.listing-details {
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  width: 100%;
+}
+.mention-details {
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  margin-top: 5px;
+  width: 100%;
+}
+.mention-icon {
+  margin: 5px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 100px;
+  padding: 0 10px 0 10px;
+}
+
+/*--------------------------------------------------------------
+# END - Listings and Mentions
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
 .team .member {
