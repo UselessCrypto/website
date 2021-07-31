@@ -44,12 +44,14 @@ h3, h4, h5, h6 {
   font-size: 22px;
 }
 
-#copy-useless-contract {
+#copy-useless-contract,
+#copy-useless-contract-swapper {
   border: none;
   background: transparent;
 }
 
-#copy-useless-contract:hover {
+#copy-useless-contract:hover,
+#copy-useless-contract-swapper:hover {
   color: #eab729;
 }
 
