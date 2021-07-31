@@ -209,7 +209,7 @@
   });
 
 var copying = false;
-function copyText (textToCopy) {
+function copyText (textToCopy, target) {
   if (copying) return;
   // Create textarea element
   var textarea = document.createElement('textarea')
@@ -233,12 +233,22 @@ function copyText (textToCopy) {
   try {
     copying = true;
     document.execCommand('copy');
-    $('#copy-useless-contract .icofont-ui-copy').hide();
-    $('#copy-useless-contract .icofont-check-circled').show();
+    if (target === 'contract') {
+      $('#copy-useless-contract .icofont-ui-copy').hide();
+      $('#copy-useless-contract .icofont-check-circled').show();
+    } else if (target === 'swapper') {
+      $('#copy-useless-contract-swapper .icofont-ui-copy').hide();
+      $('#copy-useless-contract-swapper .icofont-check-circled').show();
+    }
 
     setTimeout(() => {
-      $('#copy-useless-contract .icofont-ui-copy').show();
-      $('#copy-useless-contract .icofont-check-circled').hide();
+      if (target === 'contract') {
+        $('#copy-useless-contract .icofont-ui-copy').show();
+        $('#copy-useless-contract .icofont-check-circled').hide();
+      } else if (target === 'swapper') {
+        $('#copy-useless-contract-swapper .icofont-ui-copy').show();
+        $('#copy-useless-contract-swapper .icofont-check-circled').hide();
+      }
       copying = false;
     }, 1000);
   } finally {
@@ -249,7 +259,11 @@ function copyText (textToCopy) {
 }
 
 $('#copy-useless-contract').click(function() {
-  copyText('0x2cd2664Ce5639e46c6a3125257361e01d0213657');
+  copyText('0x2cd2664Ce5639e46c6a3125257361e01d0213657', 'contract');
+})
+  
+$('#copy-useless-contract-swapper').click(function() {
+  copyText('0x2d72aAb6d81E8EE681430C13850bD77585F222Cb', 'swapper');
 })
 
 })(jQuery);
