@@ -1833,6 +1833,11 @@ section {
 /*--------------------------------------------------------------
 # BUY Page
 --------------------------------------------------------------*/
+.how-to-buy-pcs {
+    justify-content: center;
+    margin-top: 50px;
+    padding: 15px;
+}
 .iframe-container {
  height: 0;
  margin-top: 50px;
