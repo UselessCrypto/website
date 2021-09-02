@@ -1,6 +1,6 @@
 /* Landing Page */
 #landing-page {
- background-image: url(/website/assets/img/landing_page_img\ _mob.png);
+ background-image: url(../img/landing_page_img\ _mob.png);
  background-size: cover;
  background-repeat: no-repeat;
  background-attachment: fixed;
@@ -15,6 +15,15 @@
  height: 50vh;
  width: 100vh;
  align-items: center;
+}
+
+#app-info {
+ text-align: center;
+}
+
+#app-info ul {
+ padding-inline-start: 0;
+ list-style-position: inside;
 }
 
 h1 {
@@ -72,12 +81,8 @@ li {
  display: inline-block;
 }
 
-/* mobile */
-@media (min-width: 320px) and (max-width: 767px) {
- #landing-page {
-  background-image: url(../img/landing_page_img\ _mob.png);
- }
-
+/* mobile
+@media only screen and (min-width: 320px) and (max-width: 768px) {
  #col1 {
   margin: auto;
   height: 50vh;
@@ -89,7 +94,7 @@ li {
  ul {
   list-style-position: inside;
  }
-}
+} */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
  #landing-page {
@@ -97,30 +102,43 @@ li {
  }
  #col1 {
   height: 50vh;
-  width: 100vh;
+  width: 100vw;
  }
  #col2 {
   height: 50vh;
-  width: 100vh;
+  width: 100vw;
   align-items: center;
   justify-content: center;
+ }
+
+ #app-info {
+  margin-top: 6rem;
  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
  #landing-page {
-  background-image: url(../img/landing_page_img\ _tab_lndscp.png);
+  background-image: url(../img/landing_page_img.png);
  }
  #col1 {
   height: 100vh;
+  width: 50vw;
  }
  #col2 {
   height: 100vh;
+  width: 50vh;
   justify-content: center;
  }
  #app-info {
+  text-align: left;
   margin-left: 6rem;
  }
+
+ #app-info ul {
+  padding-inline-start: 40;
+  list-style-position: inside;
+ }
+
  h1 {
   font-size: 30px;
  }
@@ -143,9 +161,9 @@ li {
  }
 }
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
  #landing-page {
-  background-image: url(/website/assets/img/landing_page_img.png);
+  background-image: url(../img/landing_page_img.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -158,5 +176,14 @@ li {
  #col2 {
   height: 100vh;
   justify-content: center;
+ }
+
+ #app-info {
+  text-align: left;
+ }
+
+ #app-info ul {
+  padding-inline-start: 40;
+  list-style-position: inside;
  }
 }
