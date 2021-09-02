@@ -1,0 +1,162 @@
+/* Landing Page */
+#landing-page {
+ background-image: url(/website/assets/img/landing_page_img\ _mob.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+#col1 {
+ height: 50vh;
+ width: 100vh;
+}
+
+#col2 {
+ height: 50vh;
+ width: 100vh;
+ align-items: center;
+}
+
+h1 {
+ font-size: 30px;
+}
+
+li {
+ font-size: 16px;
+}
+.btn-landing-page {
+ padding: 4px;
+}
+
+#beta-text {
+ color: #eab729;
+ font-size: 22px;
+ padding-bottom: 0px;
+}
+
+.btn-landing-page {
+ background: #eab729;
+ border: none;
+ font-weight: 500;
+ font-size: 16px;
+ width: 100px;
+ letter-spacing: 1px;
+ margin-right: 1rem;
+ margin-bottom: 0.5rem;
+ display: inline-block;
+ padding: 5px 5px;
+ font-weight: bold;
+ border-radius: 10px;
+ transition: 0.5s;
+}
+
+.btn-landing-page:hover {
+ background: #ffb600b0;
+}
+
+.btn-landing-page a {
+ color: #fff;
+ font-size: 10px;
+ display: inline-block;
+}
+
+#google-icon {
+ color: #fff;
+ font-size: 24px;
+ display: inline-block;
+}
+
+#apple-icon {
+ color: #fff;
+ font-size: 24px;
+ display: inline-block;
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+ #landing-page {
+  background-image: url(../img/landing_page_img\ _mob.png);
+ }
+
+ #col1 {
+  margin: auto;
+  height: 50vh;
+ }
+ #col2 {
+  height: 50vh;
+ }
+
+ ul {
+  list-style-position: inside;
+ }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+ #landing-page {
+  background-image: url(../img/landing_page_img\ _tab.png);
+ }
+ #col1 {
+  height: 50vh;
+  width: 100vh;
+ }
+ #col2 {
+  height: 50vh;
+  width: 100vh;
+  align-items: center;
+  justify-content: center;
+ }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+ #landing-page {
+  background-image: url(../img/landing_page_img\ _tab_lndscp.png);
+ }
+ #col1 {
+  height: 100vh;
+ }
+ #col2 {
+  height: 100vh;
+  justify-content: center;
+ }
+ #app-info {
+  margin-left: 6rem;
+ }
+ h1 {
+  font-size: 30px;
+ }
+
+ #beta-text {
+  font-size: 22px;
+  padding-bottom: 0px;
+ }
+
+ li {
+  font-size: 16px;
+ }
+ .btn-landing-page {
+  padding: 4px;
+ }
+
+ #google-icon,
+ #apple-icon {
+  font-size: 24px;
+ }
+}
+
+@media (min-width: 1024px) {
+ #landing-page {
+  background-image: url(/website/assets/img/landing_page_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ }
+
+ #col1 {
+  height: 100vh;
+ }
+
+ #col2 {
+  height: 100vh;
+  justify-content: center;
+ }
+}
