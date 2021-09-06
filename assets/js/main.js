@@ -263,7 +263,7 @@ $('#copy-useless-contract').click(function() {
 })
   
 $('#copy-useless-contract-swapper').click(function() {
-  copyText('0x6eb4328f6B738C1527da8cAB1FacaA0f69F2372a', 'swapper');
+  copyText('0x7fDA897c4E3309C6631bE723c8038c0F711f6F15', 'swapper');
 })
 
 })(jQuery);
