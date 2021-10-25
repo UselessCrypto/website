@@ -57,6 +57,7 @@ li {
  font-weight: bold;
  border-radius: 10px;
  transition: 0.5s;
+ min-height: 48px;
 }
 
 .btn-landing-page:hover {
@@ -79,6 +80,12 @@ li {
  color: #fff;
  font-size: 24px;
  display: inline-block;
+}
+
+#app-features {
+ text-align: justify;
+ margin: 0 auto;
+ width: 240px;
 }
 
 /* mobile
@@ -113,6 +120,12 @@ li {
 
  #app-info {
   margin-top: 6rem;
+ }
+
+ #app-features {
+  text-align: justify;
+  margin: 0 auto;
+  width: 240px;
  }
 }
 
@@ -159,6 +172,10 @@ li {
  #apple-icon {
   font-size: 24px;
  }
+
+ #app-features {
+  text-align: left;
+ }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -186,4 +203,18 @@ li {
   padding-inline-start: 40;
   list-style-position: inside;
  }
+
+ #app-features {
+  text-align: left;
+  width: 400px;
+ }
+}
+
+#home-link {
+ color: black;
+}
+
+#app-buy-btn {
+ margin-top: 8px;
+ width: 200px;
 }
